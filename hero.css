@@ -1,0 +1,88 @@
+/*Hero Section */
+.hero {
+    /*background: #131212;
+    background: linear-gradient(to right,#fff ,#5f2896*);*/
+    background-image: linear-gradient( #472F60 , #221B29 );
+
+}
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero_heading{
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.hero_description{
+    font-size: 60px;
+    background: #D3C0FC; 
+    background-size:100% ;
+
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(red, green, rgb(0, 195, 255));
+}
+.hero_button{
+    font-size: 1.8rem;
+    background: #5e09807c;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.hero_button a{
+    position: relative;
+    z-index: 2;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.hero_button:after {
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background-color: #D3C0FC;
+    transition: all 0.35s;
+    border-radius: 6px;
+}
+
+.hero_button:hover{
+    color: #fff;
+}
+
+.hero_button:hover:after{
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .hero_heading{
+        font-size:60px;
+    }
+    .hero_description{
+        font-size: 100px;
+    }
+}
+
+
+
+
+
